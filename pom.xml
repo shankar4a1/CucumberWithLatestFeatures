@@ -26,16 +26,21 @@
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <surefire.fork.count>6</surefire.fork.count>
         <java.version>1.8</java.version>
-        <maven.surefire.plugin.version>2.22.0</maven.surefire.plugin.version>
+        <maven.surefire.plugin.version>3.0.0-M4</maven.surefire.plugin.version>
         <testFailureIgnore>true</testFailureIgnore>
         <!-- <include>**/*Test.class</include> -->
         <include>**/*FailedRun.class</include>
         <generateHarReport>false</generateHarReport>
         <sauce.onedemand.driver>1.2</sauce.onedemand.driver>
-        <!--<build.number>1.1</build.number> -->
+        <build.number>1.1</build.number>
         <timestamp>${maven.build.timestamp}</timestamp>
         <maven.build.timestamp.format>yyyy-MM-dd-HH_mm</maven.build.timestamp.format>
         <sonar.maven.version>3.6.0.1398</sonar.maven.version>
+        <!--Classification values -->
+        <environment>SIT</environment>
+        <!--<url>temp</url>-->
+        <browserName>chrome</browserName>
+        <platform>Windows</platform>
     </properties>
 
     <dependencies>
@@ -161,6 +166,11 @@
             <artifactId>selenium-shutterbug</artifactId>
             <version>0.8</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire-junit47</artifactId>
+            <version>${maven.surefire.plugin.version}</version>
+        </dependency>
     </dependencies>
     <profiles>
         <profile>
@@ -185,7 +195,7 @@
                         <version>${maven.surefire.plugin.version}</version>
                         <configuration>
                             <parallel>both</parallel>
-                            <threadCount>6</threadCount>
+                             <threadCount>6</threadCount>
                             <useUnlimitedThreads>false</useUnlimitedThreads>
                             <perCoreThreadCount>false</perCoreThreadCount>
                             <argLine>-Xmx8192m</argLine>
@@ -205,6 +215,13 @@
                                 </goals>
                                 <configuration>
                                     <projectName>demo</projectName>
+                                    <buildNumber> ${build.number}</buildNumber>
+                                    <classifications>
+                                        <Platform>${platform}</Platform>
+                                        <Browser>${browserName}</Browser>
+                                        <Environment>${environment}</Environment>
+                                        <URL>${url}</URL>
+                                    </classifications>
                                     <skip>false</skip>
                                     <outputDirectory>Reports/${timestamp}</outputDirectory>
                                     <inputDirectory>${project.build.directory}/cucumber-html-reports</inputDirectory>
@@ -294,6 +311,13 @@
                                 </goals>
                                 <configuration>
                                     <projectName>demo</projectName>
+                                    <buildNumber> ${build.number}</buildNumber>
+                                    <classifications>
+                                        <Platform>${platform}</Platform>
+                                        <Browser>${browserName}</Browser>
+                                        <Environment>${environment}</Environment>
+                                        <URL>${url}</URL>
+                                    </classifications>
                                     <skip>false</skip>
                                     <outputDirectory>Reports/${timestamp}</outputDirectory>
                                     <inputDirectory>${project.build.directory}/cucumber-html-reports</inputDirectory>
@@ -316,7 +340,7 @@
                                 </goals>
                                 <configuration>
                                     <classpathScope>test</classpathScope>
-                                    <mainClass>com.demo.demoautomation.framework.utility.ExecutionSummary</mainClass>
+                                    <mainClass>com.demo.framework.utility.ExecutionSummary</mainClass>
                                     <arguments>
                                         <argument>${project.build.directory}/cucumber-html-reports/cucumber.json</argument>
                                     </arguments>

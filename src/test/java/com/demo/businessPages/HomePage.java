@@ -1,6 +1,6 @@
 package com.demo.businessPages;
 
-import com.demo.framework.utility.AbstractPage;
+import com.demo.framework.utility.ReusableLibrary;
 import com.demo.framework.utility.ConfigurationReader;
 import com.demo.framework.utility.Log;
 import io.cucumber.java.Scenario;
@@ -14,7 +14,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomePage extends AbstractPage {
+public class HomePage extends ReusableLibrary {
 
     private WebDriver driver;
     private ConfigurationReader configReaderObj;

@@ -7,8 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AbstractPage {
-	 private Logger log = Log.getLogger(AbstractPage.class);
+public class ReusableLibrary {
+	 private Logger log = Log.getLogger(ReusableLibrary.class);
 	    protected Scenario scenario;
 	    protected WebDriver driver;
 	    protected WebDriverWait wait;

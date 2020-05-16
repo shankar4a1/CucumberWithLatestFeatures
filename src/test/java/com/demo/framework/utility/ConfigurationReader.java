@@ -32,7 +32,11 @@ public class ConfigurationReader {
 
 	    public String getApplicationURL()
 	    {
-	        String URL = properties.getProperty("appURL");
+			String URL = System.getProperty("appURL");
+	    	if(URL==null){
+				URL=properties.getProperty("appURL");
+			}
+
 	        if(URL!= null)
 	            return URL;
 	        else
@@ -88,8 +92,14 @@ public class ConfigurationReader {
 
 	    public String getBrowserName()
 	    {
+			String browserName=System.getProperty("browserName");
 
-	        String browserName = properties.getProperty("browserName");
+	    	if(browserName==null){
+				browserName=properties.getProperty("browserName");
+
+			}
+
+
 	        if(browserName!= null)
 	            return browserName;
 	        else

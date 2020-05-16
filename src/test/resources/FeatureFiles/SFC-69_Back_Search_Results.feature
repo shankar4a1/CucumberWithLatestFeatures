@@ -1,4 +1,4 @@
-Feature: SFC-69 related test cases. Link to story: https://crowncommercialservice.atlassian.net/browse/SFC-69
+Feature: SFC-69 related test cases.
 
   @Test @SFC-65 @SFC-118
   Scenario Outline: As a buyer I want to be given a CTA button to return to the search result page
