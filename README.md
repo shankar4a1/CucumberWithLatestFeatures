@@ -13,7 +13,7 @@ Cucumber report
 Full screen shot for long pages
 Log4j 
 Supports cross browser 
-Retry failed scenarios 
+Retry failed scenarios
 
 
 **New Features will be added :**

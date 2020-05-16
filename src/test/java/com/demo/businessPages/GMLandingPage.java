@@ -1,6 +1,6 @@
 package com.demo.businessPages;
 
-import com.demo.framework.utility.Actions;
+import com.demo.framework.utility.AbstractPage;
 import com.demo.framework.utility.ConfigurationReader;
 import com.demo.framework.utility.Log;
 
@@ -14,7 +14,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class GMLandingPage extends Actions {
+public class GMLandingPage extends AbstractPage {
     private WebDriver driver;
     private ConfigurationReader configReaderObj;
     private Logger log = Log.getLogger(HomePage.class);
