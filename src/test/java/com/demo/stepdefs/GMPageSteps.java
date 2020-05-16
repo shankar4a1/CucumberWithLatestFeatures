@@ -4,9 +4,10 @@ import com.demo.businessPages.GMLandingPage;
 import com.demo.context.TestContext;
 import com.demo.framework.utility.Log;
 import com.demo.framework.utility.PageObjectManager;
-import cucumber.api.Scenario;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
+
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
