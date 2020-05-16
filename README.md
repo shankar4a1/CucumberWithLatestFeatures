@@ -1,7 +1,12 @@
 # CucumberWithLatestFeatures
 CucumberWithLatestFeatures
 
-Cucumber with DI(pico container) and TestNG
+Cucumber with DI(pico container) and JUNIT
+
+**_To Run on your own application:_**
+
+Update appWelcomeURL in ApplicationConfig.properties
+test -Dcucumber.filter.tags=@Test
 
 **Frame work features:**
 
@@ -13,7 +18,7 @@ Cucumber with DI(pico container) and TestNG
 6. Full screen shot for long pages
 7. Log4j 
 8. Supports cross browser 
-9. Retry failed scenarios 
+
 
 
 **New Features will be added :**
@@ -23,3 +28,4 @@ Cucumber with DI(pico container) and TestNG
 3. Cloud - Sauce/Browser stack 
 4. Integration with CSv/Excel
 5. Logging customized messages
+6. Retry failed scenarios 
