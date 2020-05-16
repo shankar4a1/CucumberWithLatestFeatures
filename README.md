@@ -5,21 +5,21 @@ Cucumber with DI(pico container) and TestNG
 
 **Frame work features:**
 
-Cucumber Latest version with 5.5
-Junit
-Dependency Injection using-PICO
-Parallel execution
-Cucumber report
-Full screen shot for long pages
-Log4j 
-Supports cross browser 
-Retry failed scenarios
+1. Cucumber Latest version with 5.5
+2. Junit
+3. Dependency Injection using-PICO
+4. Parallel execution
+5. Cucumber report
+6. Full screen shot for long pages
+7. Log4j 
+8. Supports cross browser 
+9. Retry failed scenarios 
 
 
 **New Features will be added :**
 
-Table transformer
-TestNG-Soft assertions
-Cloud - Sauce/Browser stack 
-Integration with CSv/Excel
-Logging customized messages
+1. Table transformer
+2. TestNG-Soft assertions
+3. Cloud - Sauce/Browser stack 
+4. Integration with CSv/Excel
+5. Logging customized messages
