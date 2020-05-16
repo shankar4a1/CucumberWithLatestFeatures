@@ -220,7 +220,7 @@
                                         <Platform>${platform}</Platform>
                                         <Browser>${browserName}</Browser>
                                         <Environment>${environment}</Environment>
-                                        <URL>${url}</URL>
+                                       <!-- <URL>${url}</URL>-->
                                     </classifications>
                                     <skip>false</skip>
                                     <outputDirectory>Reports/${timestamp}</outputDirectory>

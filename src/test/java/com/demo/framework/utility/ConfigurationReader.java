@@ -11,11 +11,12 @@ public class ConfigurationReader {
 
 	 private Logger log = Log.getLogger(ConfigurationReader.class);
 	    private Properties properties;
-	    private String path = "config//ApplicationConfig.properties";
-	    public ConfigurationReader()
+
+	public ConfigurationReader()
 	    {
 	        BufferedReader reader;
-	        try {
+			String path = System.getProperty("user.dir") + "//src//test//java//com//demo//properties//ApplicationConfig.properties";
+			try {
 	            reader = new BufferedReader(new FileReader(path));
 	            properties = new Properties();
 	            try {
