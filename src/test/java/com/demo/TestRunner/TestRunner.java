@@ -13,10 +13,10 @@ import org.junit.runner.RunWith;
         monochrome = true,
         plugin = { "pretty", "html:target/cucumber-html-reports", "json:target/cucumber-html-reports/cucumber.json"},
 
-        tags = "@Test1"
+        tags = "@Table"
 )
 
-// dryRun = false
+
 
 
 
