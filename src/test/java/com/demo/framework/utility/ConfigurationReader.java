@@ -10,12 +10,13 @@ import org.apache.log4j.Logger;
 public class ConfigurationReader {
 
 	 private Logger log = Log.getLogger(ConfigurationReader.class);
-	    private Properties properties;
-	    private String path = "config//ApplicationConfig.properties";
-	    public ConfigurationReader()
+	 private Properties properties;
+
+	public ConfigurationReader()
 	    {
 	        BufferedReader reader;
-	        try {
+			String path = System.getProperty("user.dir") + "//src//test//java//com//demo//properties//ApplicationConfig.properties";
+			try {
 	            reader = new BufferedReader(new FileReader(path));
 	            properties = new Properties();
 	            try {
@@ -70,25 +71,7 @@ public class ConfigurationReader {
 	            throw new RuntimeException("Gecko driver path not specified in the ApplicationConfig.properties file.");
 	    }
 
-	    public String getSecurityKey()
-	    {
-	        String securityKey = properties.getProperty("securityKey");
-	        if(securityKey!= null)
-	            return securityKey;
-	        else
-	            throw new RuntimeException("Security Key not specified in the ApplicationConfig.properties file.");
-	    }
 
-	    public String getPIN()
-	    {
-
-	        String pin = properties.getProperty("PIN");
-	        if(pin!= null)
-	            return pin;
-	        else
-	            throw new RuntimeException("PIN not specified in the ApplicationConfig.properties file.");
-
-	    }
 
 	    public String getBrowserName()
 	    {
@@ -116,10 +99,5 @@ public class ConfigurationReader {
 	            throw new RuntimeException(key + " not specified in the ApplicationConfig.properties file.");
 	    }
 
-	    /*public List<String> getNavigationButtonList()
-	    {
-	        String navigationButtons = properties.getProperty("navigationButtonList");
-	        List<String> navigationButtonList = Arrays.asList(navigationButtons.split(","));
-	        return navigationButtonList;
-	    }*/
+
 }

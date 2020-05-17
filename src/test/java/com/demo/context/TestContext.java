@@ -24,18 +24,22 @@ import java.util.List;
 
 
 public class TestContext {
-
     private Logger log = Log.getLogger(TestContext.class);
-    private WebDriver driver;
+
     private BrowserFactory browserFactory;
     private PageObjectManager objectManager;
+    public ScenarioContext scenarioContext;
+    private ConfigurationReader configReader;
+
+
+    private WebDriver driver;
 
     public Scenario scenario;
-    public ScenarioContext scenarioContext;
+
     private JSONUtility jsonUtilityObj;
-    private ConfigurationReader configReader;
-    public List<String> navigationButtonList;
+
     public String allPageScreenshotFlag;
+
 
 
 
@@ -50,7 +54,7 @@ public class TestContext {
         browserFactory = new BrowserFactory();
         browserFactory.initiateDriver(configReader.getBrowserName());
         driver = browserFactory.getDriver();
-        //objectManager = new PageObjectManager(driver, scenario);
+        objectManager = new PageObjectManager(driver, scenario);
         long threadId = Thread.currentThread().getId();
         String processName = ManagementFactory.getRuntimeMXBean().getName();
         System.out.println("Started in thread: " + threadId + ", in JVM: " + processName);

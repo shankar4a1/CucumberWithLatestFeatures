@@ -11,7 +11,7 @@ public class Log {
         if(root){
             return Logger.getLogger(cls);
         }
-        PropertyConfigurator.configure("config//log4j.properties");
+        PropertyConfigurator.configure(System.getProperty("user.dir") + "//src//test//java//com//demo//properties//log4j.properties");
         root = true;
         return Logger.getLogger(cls);
     }

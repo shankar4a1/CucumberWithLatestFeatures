@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: SFC-69 related test cases. Link to story: https://crowncommercialservice.atlassian.net/browse/SFC-69
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 27.721 s <<< FAILURE! - in SFC-69 related test cases. Link to story: https://crowncommercialservice.atlassian.net/browse/SFC-69
+SFC-69 related test cases. Link to story: https://crowncommercialservice.atlassian.net/browse/SFC-69.As a buyer I want to be given a CTA button to return to the search result page  Time elapsed: 27.721 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='logo']//img"}
+  (Session info: chrome=81.0.4044.122)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BKM2109', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\shank\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65402}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b02a7426bbe1b6e9a735970563756c93
+*** Element info: {Using=xpath, value=//a[@class='logo']//img}
+

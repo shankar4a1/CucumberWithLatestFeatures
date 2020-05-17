@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: SFC-69 related test cases.
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 30.278 s <<< FAILURE! - in SFC-69 related test cases.
+SFC-69 related test cases..As a buyer I want to be given a CTA button to return to the search result page  Time elapsed: 30.278 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: 
+Step [User enters "([^"]*)" details] is defined with 1 parameters at 'com.demo.stepdefs.HomeSteps.user_enters_details(java.lang.String)'.
+However, the gherkin step has 0 arguments.
+Step text: User enters "Linen" details
+

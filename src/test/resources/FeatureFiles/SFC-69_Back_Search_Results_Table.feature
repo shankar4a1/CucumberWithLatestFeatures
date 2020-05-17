@@ -1,10 +1,14 @@
 Feature: SFC-69 related test cases.
 
-  @Test @SFC-65 @SFC-118
+  @Test @SFC-65 @SFC-118 @Table
   Scenario Outline: As a buyer I want to be given a CTA button to return to the search result page
-    Given user logs in to the CCS application for "<ScenarioID>"
+    Given user logs in to the CCS application
+    |ScenarioID |
+    |<ScenarioID>|
     And User is navigated to CCS home page
-    And User enters "<framework>" details
+    And User enters details
+    |framework|
+    |<framework>|
     And User clicks on the "Help me find the right framework" button
     And User is displayed with GM landing page
     And User clicks "Search Frameworks" CTA from the page
