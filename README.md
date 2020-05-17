@@ -17,15 +17,16 @@ test -Dcucumber.filter.tags=@Test
 5. Cucumber report
 6. Full screen shot for long pages
 7. Log4j 
-8. Supports cross browser 
+8. Supports cross browser
+9. Table transformer
 
 
 
 **New Features will be added :**
 
-1. Table transformer
-2. TestNG-Soft assertions
-3. Cloud - Sauce/Browser stack 
-4. Integration with CSv/Excel
-5. Logging customized messages
-6. Retry failed scenarios 
+
+1. TestNG-Soft assertions
+2. Cloud - Sauce/Browser stack 
+3. Integration with CSv/Excel
+4. Logging customized messages
+5. Retry failed scenarios 
