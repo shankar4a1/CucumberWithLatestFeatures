@@ -24,8 +24,6 @@ test -Dcucumber.filter.tags=@Test
 
 **New Features will be added :**
 
-
-1. TestNG-Soft assertions
 2. Cloud - Sauce/Browser stack 
 3. Integration with CSv/Excel
 4. Logging customized messages
