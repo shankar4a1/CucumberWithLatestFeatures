@@ -4,6 +4,9 @@ CucumberWithLatestFeatures
 Cucumber with DI(pico container) and JUNIT
 
 **_To Run on your own application:_**
+Add lombok plugin in eclipse/Intellij
+https://www.journaldev.com/18124/java-project-lombok
+
 
 Update appWelcomeURL in ApplicationConfig.properties
 test -Dcucumber.filter.tags=@Test
